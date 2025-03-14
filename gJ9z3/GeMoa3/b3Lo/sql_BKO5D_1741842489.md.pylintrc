@@ -41,7 +41,6 @@ extension-pkg-whitelist=
 # AST will be different than the one from reality.
 optimize-ast=no
 
-
 [MESSAGES CONTROL]
 
 # Only show warnings with the listed confidence levels. Leave empty to show
