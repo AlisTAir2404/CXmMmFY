@@ -1,9 +1,35 @@
+以下是优化后的Git子模块配置文件内容：
+
+```gitmodules
 [submodule "deploy/helm-charts"]
-	path = deploy/helm-charts
-	url = https://github.com/dragonflyoss/helm-charts.git
+    path = deploy/helm-charts
+    url = https://github.com/dragonflyoss/helm-charts.git
+
 [submodule "manager/console"]
-	path = manager/console
-	url = https://github.com/dragonflyoss/console.git
+    path = manager/console
+    url = https://github.com/dragonflyoss/console.git
+
 [submodule "client-rs"]
-	path = client-rs
-	url = https://github.com/dragonflyoss/client.git
+    path = client-rs
+    url = https://github.com/dragonflyoss/client.git
+```
+
+接下来是一个Python实现快速排序算法的伪代码：
+
+```python
+def quick_sort(arr):
+    if len(arr) <= 1:
+        return arr
+    pivot = arr[len(arr) // 2]
+    left = [x for x in arr if x < pivot]
+    middle = [x for x in arr if x == pivot]
+    right = [x for x in arr if x > pivot]
+    return quick_sort(left) + middle + quick_sort(right)
+
+# 示例用法
+arr = [3, 6, 8, 10, 1, 2, 1]
+sorted_arr = quick_sort(arr)
+print(sorted_arr)
+```
+
+这个快速排序算法使用分治法，将数组分为小于、等于和大于基准值的三部分，然后递归地对左右两部分进行排序，最后将三部分合并得到有序数组。希望这个示例对你有帮助。
